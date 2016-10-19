@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Efectos Gsap</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/minified/TweenMax.min.js"></script>
+</head>
+<body>
+	<img id="img1" src="img/3.jpg">
+	<img id="img2" src="img/images.jpg">
+
+	<script type="text/javascript">
+		var a=document.getElementById("img1");
+		TweenMax.to(a,3,{left:"40%", height:"10%", rotationX:"360°", rotationY:"360°", rotationZ:"360°", top:"20%"});
+
+		var b=document.getElementById("img2");
+		TweenMax.to(b,3,{left:"41%", height:"10%", rotationX:"-360°", rotationY:"-360°", rotationZ:"-360°", top:"32%"});
+	</script>
+</body>
+</html>
